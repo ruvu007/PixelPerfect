@@ -1,0 +1,185 @@
+section {
+  width: 100%;
+  height: 1000px;
+  float: left;
+}
+
+#paginaA {
+  background-image: url(img/shadow.png);
+}
+
+#paginaB{
+  background-image: url(img/slide2/degrader1.png);
+}
+
+@font-face {
+    font-family: "Gothic";
+    src: url(GOTHIC.TTF) format("truetype");
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8rem;
+    width: 15%;
+}
+
+.text1 {
+    color: white;
+    text-align: center;
+    font-family: Gothic;
+}
+
+.text2 {
+    text-align: center;
+    margin-top: -1.5rem;
+    font-family: Gothic;
+}
+
+.text3 {
+    text-align: center;
+    padding-left: 26.5rem;
+    padding-right: 26.5rem;
+    margin-top: -1rem;
+    font-family: Gothic;
+    animation: fadeIn ease 5s;
+    -webkit-animation: fadeIn ease 5s;
+    -moz-animation: fadeIn ease 5s;
+    -o-animation: fadeIn ease 5s;
+    -ms-animation: fadeIn ease 5s;
+}
+
+.newyear {
+    width: 15%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    animation: fadeIn ease 5s;
+    -webkit-animation: fadeIn ease 5s;
+    -moz-animation: fadeIn ease 5s;
+    -o-animation: fadeIn ease 5s;
+    -ms-animation: fadeIn ease 5s;
+    animation-delay: 1s;
+    visibility: hidden;
+}
+
+.spark1 {
+    margin-left: 53rem;
+    margin-top: -12rem;
+    position: absolute;
+}
+
+.spark2 {
+    margin-left: 39.5rem;
+    margin-top: -9.5rem;
+    position: absolute;
+}
+
+.spark3 {
+    margin-left: 39.5rem;
+    margin-top: -1rem;
+    position: absolute;
+}
+
+.spark1, .spark2, .spark3 {
+    -webkit-animation: flickerAnimation .5s infinite;
+    -moz-animation: flickerAnimation .5s infinite;
+    -o-animation: flickerAnimation .5s infinite;
+    animation: flickerAnimation .5s infinite;
+    animation-delay: 1s;
+    visibility: hidden;
+}
+
+.slot {
+  margin-left: 33rem;
+  margin-top: 17rem;
+}
+
+.text4 {
+  text-align: center;
+    padding-left: 26.5rem;
+    padding-right: 26.5rem;
+    margin-top: -1rem;
+    font-family: Gothic;
+    animation: fadeIn ease 5s;
+    -webkit-animation: fadeIn ease 5s;
+    -moz-animation: fadeIn ease 5s;
+    -o-animation: fadeIn ease 5s;
+    -ms-animation: fadeIn ease 5s;
+}
+
+/* Fade in */
+
+@keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+      visibility: visible;
+    }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+  }
+}
+
+/* Sparks */
+
+@keyframes flickerAnimation {
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { 
+    opacity:1;
+    visibility: visible;
+   }
+}
+@-o-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
